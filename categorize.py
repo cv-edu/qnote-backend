@@ -12,7 +12,7 @@ def date_text(date_url):
     returns str of date
     '''
     pass
-    
+
 def title_text(title_url):
     '''
     returns str of title
@@ -24,4 +24,3 @@ def body_text(body_url):
     returns str of body
     '''
     pass
-
