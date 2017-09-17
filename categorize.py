@@ -14,7 +14,7 @@ def class_text(class_url):
         return class_text
     else:
         errortext_class = 'uncategorised notes'
-        return error_class
+        return errortext_class
     
 def date_text(date_url):
     '''
