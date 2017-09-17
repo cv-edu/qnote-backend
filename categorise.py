@@ -52,5 +52,3 @@ def body_text(body_url):
 date_text('http://media02.hongkiat.com/psd-text-svg/logo-example.jpg')
 date_text('http://www.jqueryscript.net/images/Easy-jQuery-Text-Rotator-With-Fancy-Typing-Animations-Bubble-Text.jpg')
 date_text('https://static1.squarespace.com/static/5914d841e6f2e109b2a338f6/5967ce27197aea1849dcc069/596cf1fe17bffc03c0c16cca/1500392204858/mashable.png')
-
-

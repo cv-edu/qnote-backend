@@ -1,6 +1,6 @@
 # Takes note information and creates a class directory and stores notes in .txt files.
 # @param: clss, date, title, body
-# @date created: 9/17/17
+# @date_created: 9/17/17
 import os
 
 
