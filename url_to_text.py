@@ -75,6 +75,7 @@ def get_words_json(url):
         #return handwriting_json
     
     except Exception as e:
+        print(e)
         exit()
     
 def url_to_text(url):

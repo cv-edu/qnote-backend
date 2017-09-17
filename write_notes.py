@@ -7,16 +7,14 @@ import categorize
 
 
 # Using upload_image and categorize tools to convert notes to separate String variables.
-url_dict = upload_image.upload_multiple()
-url_class = url_dict['class']
-url_date = url_dict['date']
-url_title = url_dict['title']
-url_body = url_dict['body']
+def write(contents):
+    clss = categorize.class_text(contents["class"])
+    date = categorize.date_text(contents["date"])
+    title = categorize.title_text(contents["name"])
+    body = categorize.body_text(contents["body"])
 
-clss = categorize.class_text(url_class)
-date = categorize.date_text(url_date)
-title = categorize.title_text(url_title)
-body = categorize.body_text(url_body)
+    crt_class(clss)
+    write_txt(clss, date, title, body)
 
 # Checks if class folder exists and makes new directory if it doesn't.
 def crt_class(clss):
