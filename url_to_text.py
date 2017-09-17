@@ -1,6 +1,5 @@
 '''
 returns extracted text from the image of handwritten notes
-
 url_to_text(url) returns str_lines.
 str_lines is a dict with format: {'line0' : 'line1text', 'line1' : 'line2text, ... }
 '''
@@ -64,8 +63,8 @@ def get_words_json(url):
         # Note: The response may not be immediately available. Handwriting recognition is an
         # async operation that can take a variable amount of time depending on the length
         # of the text you want to recognize. You may need to wait or retry this GET operation.
-    
-        print('\nHandwritten text submitted. Waiting to retrieve the recognized text.\n')
+        
+        #time.sleep required. else microsoft detects as potential ddos attack and suspends API access key
         time.sleep(1)
     
         # Execute the second REST API call and get the response.

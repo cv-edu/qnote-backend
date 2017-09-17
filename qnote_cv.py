@@ -37,6 +37,9 @@ def save():
         img = contoured[y:y+h, x:x+w]
         plt.imsave(f"contour-{i+1}.png", img);
 
-if __name__ == '__main__':
-    read("form.png")
+def process(filename):
+    read(filename)
     save()
+
+if __name__ == '__main__':
+    process("form.png")
