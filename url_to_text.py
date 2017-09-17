@@ -1,9 +1,12 @@
-########### Python 3.6 #############
-import http.client, urllib.request, urllib.parse, urllib.error, base64, requests, time, json
+'''
+returns extracted text from the image of handwritten notes
 
-###############################################
-#### Update or verify the following values. ###
-###############################################
+url_to_text(url) returns str_lines.
+str_lines is a dict with format: {'line0' : 'line1text', 'line1' : 'line2text, ... }
+'''
+
+
+import http.client, urllib.request, urllib.parse, urllib.error, base64, requests, time, json
 
 
 def get_words_json(url):
