@@ -45,7 +45,6 @@ def get_words_json(url):
         # Note: The response may not be immediately available. Handwriting recognition is an
         # async operation that can take a variable amount of time depending on the length
         # of the text you want to recognize. You may need to wait or retry this GET operation.
-
         time.sleep(1)
 
         # Execute the second REST API call and get the response.
